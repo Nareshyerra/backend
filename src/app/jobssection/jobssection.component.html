@@ -7,11 +7,6 @@
 </head>
 <body>
   <!-- edit-form.component.html -->
-
-
-
-
-
 <!-- code for edit  -->
 
   <div class="body">
@@ -24,12 +19,15 @@
             <th>JOB TITLE</th>
             <th>EXPERIENCE</th>
             <th>SKILLS</th>
-            <th>JOB TYPE</th>
+            <th>Vacancy</th>
+            <th>JOB TYPE</th> 
+             <th>QUALIFICATION</th>
+             <th>POST DATE</th>
+            <th>IS ACTIVE</th>
             <th>LOCATION</th>
             <th>JOB DESCRIPTION</th>
             <th>ACTIONS</th>
-           
-          </tr>
+            </tr>
         </thead>
         <tbody>
           <tr *ngFor="let item of jobsList | slice:(currentPage - 1) * itemsPerPage:currentPage * itemsPerPage">
@@ -39,7 +37,7 @@
             <td>{{ item.experience }}</td>
             <td>{{ item.skills }}</td>
             <td>{{ item.jobType }}</td>
-            <td>{{ item.location }}</td>
+            <td>{{ item.companyLocation }}</td>
             <td>{{ item.jobDescription }}</td>
          
             
@@ -108,8 +106,4 @@
   </div>
   </div>
 </body>
-
-
-
-
 </html>

@@ -18,6 +18,8 @@ import { ApptokenInterceptor } from './interceptors/apptoken.interceptor';
 import { AppDashboardComponent } from './components/app-dashboard/app-dashboard.component';
 import { AppJobsComponent } from './components/app-jobs/app-jobs.component';
 import { AppAppliedComponent } from './components/app-applied/app-applied.component';
+import { AngularBotModule } from './angular-bot/angular-bot.module';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 
@@ -38,6 +40,7 @@ import { AppAppliedComponent } from './components/app-applied/app-applied.compon
     AppDashboardComponent,
     AppJobsComponent,
     AppAppliedComponent,
+    ChatComponent,
    
    
   ],
@@ -47,7 +50,7 @@ import { AppAppliedComponent } from './components/app-applied/app-applied.compon
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgToastModule
+    NgToastModule, AngularBotModule,
     
   ],
   providers: [{

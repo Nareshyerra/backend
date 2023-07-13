@@ -11,11 +11,11 @@ export class JobsdetailsService {
   constructor(private http:HttpClient) { }
 
 
-baseUrl = 'https://localhost:7058/api/Jobs/Addjobsdata';
-Url = 'https://localhost:7058/api/Jobs/Jobs';
+baseUrl = 'https://localhost:7058/api/Jobs';
+Url = 'https://localhost:7058/api/Jobs';
 
-applyjobsurl = "https://localhost:7058/api/Applied/ApplyForJob";
-getappliedurl = "https://localhost:7058/api/Applied/AppliedJobs";
+applyjobsurl = "https://localhost:7058/api/appliedClass/ApplyForJob";
+getappliedurl = "https://localhost:7058/api/appliedClass/AppliedJobs";
 
 // editurl = "https://localhost:7058/api/Jobs/editjobsdata"
 // deleteurl = "https://localhost:7058/api/Jobs/deletejobsdata"
@@ -32,12 +32,12 @@ getapplied(){
   return this.http.get(this.getappliedurl)
 }
 editmethod(jobId: number, data: any): Observable<any> {
-  const editurl = `https://localhost:7058/api/Jobs/editjobsdata/${jobId}`;
+  const editurl = `https://localhost:7058/api/Jobs/${jobId}`;
   return this.http.put(editurl, data);
 }
 
 deletemethod(jobId: number){
-  const deleteurl = `https://localhost:7058/api/Jobs/deletejobsdata/${jobId}`;
+  const deleteurl = `https://localhost:7058/api/Jobs/${jobId}`;
   return this.http.delete(deleteurl)
 }
 

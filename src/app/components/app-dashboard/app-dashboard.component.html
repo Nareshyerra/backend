@@ -17,18 +17,14 @@
             <div class="sidebar-image">
               <img src="https://play-lh.googleusercontent.com/7y6gd1TKP4skySj-zI3KUs9uw9bpC99EOQNKa6BefSUHzzesFpIex3pDXWCCDTYywLM" class="image"/>
             </div>
+            <!-- Hello <h3>{{fullName}}</h3> -->
             <li class="nav-item">
               <a class="nav-link size" routerLink="/app-dashboard/jobspage" style="color: white;">Jobs section</a>
             </li>
             <li class="nav-item">
               <a class="nav-link size" routerLink="/app-dashboard/app-applied" style="color: white;">Applied Jobs</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link size" routerLink="/app-dashboard/jobspage" style="color: white;">Jobs section</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link size" routerLink="/app-dashboard/app-applied" style="color: white;">Applied Jobs</a>
-            </li>
+           
           </ul>
         </nav>
         
@@ -38,12 +34,17 @@
       </div>
     
       <div class="col-10 p-0">
+
+
+
+        
+              <h1 routerLink="/dashboard/chat">chatbot</h1>
         <router-outlet></router-outlet>
       
       </div>
     </div>
   </div> 
-  
+
  </body>
  </html>
   

@@ -10,18 +10,71 @@
   <div class="container">
     
     <form #contactForm="ngForm" (ngSubmit)="postcontact(contactForm.value)">
-      <input type="text" placeholder="ENTER JOBID" name="jobId" ngModel>
+    
+
+      <div class="row">
+        <div class="col">
+          
+          <input type="text" class="form-control" placeholder="ENTER JOBID" name="jobId" ngModel aria-label="Job Id">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control"placeholder="Enter Skills" name="skills" ngModel required aria-label="Skills">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="ENTER COMPANY NAME" name="companyName" ngModel required aria-label="companyName">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Enter JOB TYPE" name="jobType" ngModel required aria-label="jobType">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Enter JOBTITLE" name="jobTitle" ngModel required aria-label="Job Title ">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="QUALIFICATION" aria-label="Last name">
+        </div>
+      </div>
+
+      
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Enter Experience" name="experience" ngModel required aria-label="Experience">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="posted date" aria-label="Last name">
+        </div>
+      </div>
+      
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 60px; width: 500px;"></textarea>
+        <label for="floatingTextarea2">DESCRIPTION</label>
+      </div>
+   <div>
+    <button  type="submit" [disabled]="!contactForm.valid" class="btn btn-success">Post Job</button>
+   </div>
+ 
+
+
+
+
+
+
+
+      <!-- <input type="text" placeholder="ENTER JOBID" name="jobId" ngModel>
       <input type="text" placeholder="ENTER COMPANY NAME" name="companyName" ngModel required>
       <input type="text" placeholder="Enter JOBTITLE" name="jobTitle" ngModel required>
       <input type="text" placeholder="Enter Experience" name="experience" ngModel required>
       <input type="text" placeholder="Enter Skills" name="skills" ngModel required>
       <input type="text" placeholder="Enter JOB TYPE" name="jobType" ngModel required>
     
-      <input type="text" placeholder="Enter Location" name="location" ngModel required>
-      <textarea placeholder="Enter JOB DESCRIPTION" name="jobDescription" ngModel required> </textarea>
+      <input type="text" placeholder="Enter Location" name="companyLocation" ngModel required>
+      <textarea placeholder="Enter JOB DESCRIPTION" name="jobDescription" ngModel required> </textarea> -->
 
-
-      <button type="submit" [disabled]="!contactForm.valid" style="background-color: rgb(69, 156, 100);">Post Job</button>
+<!-- 
+      <button type="submit" [disabled]="!contactForm.valid" style="background-color: rgb(69, 156, 100);">Post Job</button> -->
     </form>
     <h1 *ngIf="istrue" style="color: green;">Job Posted Sucessfully</h1>
   </div>

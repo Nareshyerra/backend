@@ -12,6 +12,7 @@ import { AuthnGuard } from './guard/authn.guard';
 import { AppJobsComponent } from './components/app-jobs/app-jobs.component';
 import { AppAppliedComponent } from './components/app-applied/app-applied.component';
 import { AppDashboardComponent } from './components/app-dashboard/app-dashboard.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 
 
@@ -33,7 +34,8 @@ const routes: Routes = [
   {path:'dashboard', component:DashboardComponent, canActivate:[AuthGuard], children:[
     
     {path: 'home', component:JobssectionComponent},
-    { path: 'jobs', component: JobsComponent }
+    { path: 'jobs', component: JobsComponent },
+    { path: 'chat', component: ChatComponent }
   ]
 }
   

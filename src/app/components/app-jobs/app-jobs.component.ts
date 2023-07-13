@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppliedJobsService } from 'src/app/applied-jobs.service';
 import { JobsdetailsService } from 'src/app/jobsdetails.service';
 
+
 @Component({
   selector: 'app-app-jobs',
   templateUrl: './app-jobs.component.html',
@@ -76,7 +77,7 @@ export class AppJobsComponent implements OnInit {
 
   
   apply(item: any) {
-    const endpoint = 'https://localhost:7058/api/Applied/ApplyForJob';
+    const endpoint = 'https://localhost:7058/api/appliedClass/ApplyForJob';
   
     this.http.post(endpoint, { jobsObj: item }).subscribe(
       response => {
