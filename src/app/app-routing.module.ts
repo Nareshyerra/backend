@@ -17,8 +17,6 @@ import { AppDashboardComponent } from './components/app-dashboard/app-dashboard.
 
 
 
-
-
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
   {path:'login', component:LoginComponent},

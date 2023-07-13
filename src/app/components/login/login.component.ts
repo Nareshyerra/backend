@@ -60,4 +60,5 @@ export class LoginComponent implements OnInit {
       ValidateForm.validateAllFormFields(this.loginForm);
     }
   }
+  
 }

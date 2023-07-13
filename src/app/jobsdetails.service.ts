@@ -7,12 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class JobsdetailsService {
   selectedJob: any;
+ constructor(private http:HttpClient) { }
 
-  constructor(private http:HttpClient) { }
-
-
-baseUrl = 'https://localhost:7058/api/Jobs/Addjobsdata';
-Url = 'https://localhost:7058/api/Jobs/Jobs';
+baseUrl = 'https://localhost:7058/api/Job/AddJobsdata';
+Url = 'https://localhost:7058/api/Job/Jobs';
 
 applyjobsurl = "https://localhost:7058/api/Applied/ApplyForJob";
 getappliedurl = "https://localhost:7058/api/Applied/AppliedJobs";
@@ -32,12 +30,12 @@ getapplied(){
   return this.http.get(this.getappliedurl)
 }
 editmethod(jobId: number, data: any): Observable<any> {
-  const editurl = `https://localhost:7058/api/Jobs/editjobsdata/${jobId}`;
+  const editurl = `https://localhost:7058/api/Job/editjobsdata/${jobId}`;
   return this.http.put(editurl, data);
 }
 
 deletemethod(jobId: number){
-  const deleteurl = `https://localhost:7058/api/Jobs/deletejobsdata/${jobId}`;
+  const deleteurl = `https://localhost:7058/api/Job/deletejobsdata/${jobId}`;
   return this.http.delete(deleteurl)
 }
 

@@ -22,9 +22,6 @@ import { AppAppliedComponent } from './components/app-applied/app-applied.compon
 
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +35,8 @@ import { AppAppliedComponent } from './components/app-applied/app-applied.compon
     AppDashboardComponent,
     AppJobsComponent,
     AppAppliedComponent,
+   
+
    
    
   ],

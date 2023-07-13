@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
-<body>
+<body> -->
   
-  <div class="container">
+  <!-- <div class="container">
     
     <form #contactForm="ngForm" (ngSubmit)="postcontact(contactForm.value)">
       <input type="text" placeholder="ENTER JOBID" name="jobId" ngModel>
@@ -24,8 +24,470 @@
       <button type="submit" [disabled]="!contactForm.valid" style="background-color: rgb(69, 156, 100);">Post Job</button>
     </form>
     <h1 *ngIf="istrue" style="color: green;">Job Posted Sucessfully</h1>
+  </div>  -->
+<!-- </body></html> -->
+   <!-- <div class="container">
+    <h1>Job Posting Form</h1>
+    <form #contactForm="ngForm" (ngSubmit)="postcontact(contactForm.value)">
+      <div class="form-group">
+        <label for="jobId">Job ID</label>
+        <input type="text" class="form-control" id="jobId" placeholder="Enter Job ID" name="jobId" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="companyName">Company Name</label>
+        <input type="text" class="form-control" id="companyName" placeholder="Enter Company Name" name="companyName" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="jobTitle">Job Title</label>
+        <input type="text" class="form-control" id="jobTitle" placeholder="Enter Job Title" name="jobTitle" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="experience">Experience</label>
+        <input type="text" class="form-control" id="experience" placeholder="Enter Experience" name="experience" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills</label>
+        <input type="text" class="form-control" id="skills" placeholder="Enter Skills" name="skills" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="jobType">Job Type</label>
+        <input type="text" class="form-control" id="jobType" placeholder="Enter Job Type" name="jobType" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" id="location" placeholder="Enter Location" name="location" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="jobDescription">Job Description</label>
+        <textarea class="form-control" id="jobDescription" rows="4" placeholder="Enter Job Description" name="jobDescription" ngModel required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Post Job</button>
+    </form>
+    <h1 *ngIf="istrue" style="color: green;">Job Posted Successfully</h1>
   </div>
-  
 
 </body>
+</html>  -->
+
+
+
+<!-- <! <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    .form-group label {
+      font-weight: bold;
+      width: 500px;
+      /* height:150px; */
+    }
+
+    .form-group input,
+    .form-group textarea {
+      border-radius: 20px;
+      padding: 10px;
+      width: 600px;
+      border: 1px solid #ccc;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .btn-primary {
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .success-message {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h1 class="text-align:center">Job Posting Form</h1>
+    <form #contactForm="ngForm" (ngSubmit)="postcontact(contactForm.value)">
+      <div class="form-group">
+        <label for="jobId">Job ID</label>
+        <input type="text" class="form-control" id="jobId" placeholder="Enter Job ID" name="jobId" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="companyName">Company Name</label>
+        <input type="text" class="form-control" id="companyName" placeholder="Enter Company Name" name="companyName" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="jobTitle">Job Title</label>
+        <input type="text" class="form-control" id="jobTitle" placeholder="Enter Job Title" name="jobTitle" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="experience">Experience</label>
+        <input type="text" class="form-control" id="experience" placeholder="Enter Experience" name="experience" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills</label>
+        <input type="text" class="form-control" id="skills" placeholder="Enter Skills" name="skills" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="jobType">Job Type</label>
+        <input type="text" class="form-control" id="jobType" placeholder="Enter Job Type" name="jobType" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" id="location" placeholder="Enter Location" name="location" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="jobDescription">Job Description</label>
+        <textarea class="form-control" id="jobDescription" rows="4" placeholder="Enter Job Description" name="jobDescription" ngModel required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Post Job</button>
+    </form>
+    <h1 class="success-message" *ngIf="istrue">Job Posted Successfully</h1>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .form-container {
+      width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      align-items: center;
+    }
+
+    .form-group {
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      border-radius: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 100%;
+      font-size: 16px;
+      height: 40px;
+    }
+
+    .form-group textarea {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+    resize: vertical;
+    height: 120px;
+  }
+
+    .btn-primary {
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .success-message {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h1 class="text-center">Job Posting Form</h1>
+    <form #contactForm="ngForm" (ngSubmit)="postcontact(contactForm.value)">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="jobId">Job ID</label>
+          <input type="text" class="form-control" id="jobId" placeholder="Enter Job ID" name="jobId" ngModel>
+        </div>
+        <div class="form-group">
+          <label for="companyName">Company Name</label>
+          <input type="text" class="form-control" id="companyName" placeholder="Enter Company Name" name="companyName" ngModel required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="jobTitle">Job Title</label>
+          <input type="text" class="form-control" id="jobTitle" placeholder="Enter Job Title" name="jobTitle" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="experience">Experience</label>
+          <input type="text" class="form-control" id="experience" placeholder="Enter Experience" name="experience" ngModel required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="skills">Skills</label>
+          <input type="text" class="form-control" id="skills" placeholder="Enter Skills" name="skills" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="jobType">Job Type</label>
+          <input type="text" class="form-control" id="jobType" placeholder="Enter Job Type" name="jobType" ngModel required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" class="form-control" id="location" placeholder="Enter Location" name="location" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="vacancy">Vacancy</label>
+          <input type="text" class="form-control" id="vacancy" placeholder="Enter Vacancy" name="vacancy" ngModel required>
+        </div>
+
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="startDate">Start Date</label>
+          <input type="date" class="form-control" id="startDate" name="startDate" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="endDate">End Date</label>
+          <input type="date" class="form-control" id="endDate" name="endDate" ngModel required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="salary">Salary</label>
+          <input type="text" class="form-control" id="salary" placeholder="Enter Salary" name="salary" ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="workSchedule">Work Schedule</label>
+          <select class="form-control" id="workSchedule" name="workSchedule" ngModel required>
+            <option value="Full-time">Morning Shift</option>
+            <option value="Part-time">Night shift</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="description">Job Description</label>
+          <textarea class="form-control" id="description" rows="4" placeholder="Enter Job Description" name="description" ngModel required></textarea>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Post Job</button>
+      </div>
+    </form>
+    <h1 class="success-message text-center" *ngIf="istrue">Job Posted Successfully</h1>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+      margin: 0;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      flex-grow: 1;
+      margin-right: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 12px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .success-message {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h1 class="text-center">Job Posting Form</h1>
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="jobId">Job ID</label>
+          <input type="text" id="jobId" placeholder="Enter Job ID" name="jobId" required>
+        </div>
+        <div class="form-group">
+          <label for="companyName">Company Name</label>
+          <input type="text" id="companyName" placeholder="Enter Company Name" name="companyName" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="jobTitle">Job Title</label>
+          <input type="text" id="jobTitle" placeholder="Enter Job Title" name="jobTitle" required>
+        </div>
+        <div class="form-group">
+          <label for="experience">Experience</label>
+          <input type="text" id="experience" placeholder="Enter Experience" name="experience" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="skills">Skills</label>
+          <input type="text" id="skills" placeholder="Enter Skills" name="skills" required>
+        </div>
+        <div class="form-group">
+          <label for="jobType">Job Type</label>
+          <input type="text" id="jobType" placeholder="Enter Job Type" name="jobType" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="Enter Location" name="location" required>
+        </div>
+        <div class="form-group">
+          <label for="vacancy">Vacancy</label>
+          <input type="text" id="vacancy" placeholder="Enter Vacancy" name="vacancy" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="startDate">Start Date</label>
+          <input type="date" id="startDate" name="startDate" required>
+        </div>
+        <div class="form-group">
+          <label for="endDate">End Date</label>
+          <input type="date" id="endDate" name="endDate" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="salary">Salary</label>
+          <input type="text" id="salary" placeholder="Enter Salary" name="salary" required>
+        </div>
+        <div class="form-group">
+          <label for="workSchedule">Work Schedule</label>
+          <select id="workSchedule" name="workSchedule" required>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="description">Job Description</label>
+          <textarea id="description" rows="4" placeholder="Enter Job Description" name="description" required></textarea>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn-primary">Post Job</button>
+      </div>
+    </form>
+    <h1 class="success-message text-center">Job Posted Successfully</h1>
+  </div>
+</body>
+
 </html>
+
+

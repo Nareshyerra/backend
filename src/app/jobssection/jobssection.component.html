@@ -8,10 +8,6 @@
 <body>
   <!-- edit-form.component.html -->
 
-
-
-
-
 <!-- code for edit  -->
 
   <div class="body">
@@ -28,7 +24,6 @@
             <th>LOCATION</th>
             <th>JOB DESCRIPTION</th>
             <th>ACTIONS</th>
-           
           </tr>
         </thead>
         <tbody>
@@ -40,7 +35,7 @@
             <td>{{ item.skills }}</td>
             <td>{{ item.jobType }}</td>
             <td>{{ item.location }}</td>
-            <td>{{ item.jobDescription }}</td>
+            <td>{{ item.description }}</td>
          
             
             <td>
@@ -99,7 +94,7 @@
     <input type="text" [(ngModel)]="selectedJob.location" name="location" required>
   
     <label>JOB DESCRIPTION</label>
-    <textarea [(ngModel)]="selectedJob.jobDescription" name="jobDescription" required></textarea>
+    <textarea [(ngModel)]="selectedJob.description" name="description" required></textarea>
     <div class="form-buttons">
       <button type="submit">Save</button>
       <button type="button" (click)="cancelEditForm()">Cancel</button>
@@ -108,8 +103,4 @@
   </div>
   </div>
 </body>
-
-
-
-
 </html>

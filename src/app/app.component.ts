@@ -12,6 +12,7 @@ export class AppComponent {
   title = 'ProjectSPAN';
   public users:any = [];
   public role!:string;
+ 
 
   public FirstName : string = "";
   constructor(private api : ApiService, private auth: AuthService, private userStore: UserStoreService) { }
